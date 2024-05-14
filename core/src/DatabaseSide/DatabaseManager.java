@@ -1,6 +1,6 @@
 package DatabaseSide;
 
-import com.mygdx.game.Utils.CurrentUser;
+import com.mygdx.game.PlayerNeeds.Player;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -8,7 +8,7 @@ import java.sql.Statement;
 
 public class DatabaseManager {
     private static DatabaseManager instance;
-    private final CurrentUser currentUser = CurrentUser.getInstance();
+    private final Player currentUser = Player.getInstance();
     public static DatabaseManager getInstance(){
         if (instance == null){
             instance = new DatabaseManager();
